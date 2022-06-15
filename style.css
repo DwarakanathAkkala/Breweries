@@ -1,0 +1,46 @@
+#main-heading {
+    margin-top: 5%;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-weight: bolder;
+    font-size: 500%;
+    color: rgba(110,123,251,1);
+}
+
+.initialInfo {
+    text-align: center;
+}
+
+.card-header {
+    background-color: rgba(110,123,251,1) !important;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.card {
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    color: black;
+}
+
+.card-text {
+    text-align: center;
+    font-weight: 500;
+}
+
+.text-center {
+    margin-bottom: 10px;
+}
+
+#breweryType {
+    text-transform: capitalize;
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
