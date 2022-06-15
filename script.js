@@ -38,6 +38,7 @@ getBreweriesData();
 const displayData = (obj) => {
 
     let content = document.getElementById("content");
+    var breweryType = obj.brewery_type.charAt(0).toUpperCase() + obj.brewery_type.slice(1);
 
     // Bootstrap Card Layout
     content.innerHTML += `
@@ -45,7 +46,7 @@ const displayData = (obj) => {
         <div class="card h-100">
             <div class="card-header">${obj.name}</div>
             <div class="card-body">
-                <p class="card-text">Brewery Type: ${obj.brewery_type}</p>
+                <p class="card-text">Brewery Type: ${breweryType}</p>
                 <p class="card-text">Address: ${obj.street == null ? "" : obj.street} ${obj.city}, ${obj.state}, ${obj.country}, ${obj.postal_code}</p>
                 <p class="card-text">Website: ${obj.website_url == null? "N/A" : obj.website_url}</p>
                 <p class="card-text">Phone Number: ${obj.phone == null ? "N/A" : obj.phone}</p>
